@@ -1,0 +1,78 @@
+<div class="col-md-6 mx-auto">
+    <div class="card">
+        <div class="card-header">
+            <h3>Editar Madroño</h3>
+        </div>
+        <div class="card-body">
+            <form action="/madronos/edit/{{madrono.id}}?_method=PUT" method="POST">
+                <input type="hidden" name="_method" value="PUT">
+                <div class="form-group">
+                    <strong>NOMBRE:</strong>
+                        <input type="text" name="especie" class="form-control" value="{{madrono.especie}}">
+                    
+                    <strong>ESTADO:</strong>
+                        <input type="text" name="estados" class="form-control" value="{{madrono.estados}}">
+                    
+                    <strong>HABITO:</strong>
+                        <input type="text" name="habito" class="form-control" value="{{madrono.habito}}">
+                    
+                    <strong class="datoc" value="{{madrono.corteza_de_la_parte_alta_del_tronco_y_ramas_principales}}">CORTEZA ALTA:</strong>
+                        <input type="text" name="corteza_de_la_parte_alta_del_tronco_y_ramas_principales" class="datoc form-control" value="{{madrono.corteza_de_la_parte_alta_del_tronco_y_ramas_principales}}">
+                    
+                    <strong class="dato" value="{{madrono.peciolos_y_ramillas}}">PECIOLOS Y RAMILLAS:</strong>
+                        <input type="text" name="peciolos_y_ramillas" class="dato form-control" value="{{madrono.peciolos_y_ramillas}}">
+                    
+                    <strong class="datoc" value="{{madrono.corteza_de_ramillas}}">CORTEZA RAMAS:</strong>
+                        <input type="text" name="corteza_de_ramillas" class="datoc form-control" value="{{madrono.corteza_de_ramillas}}">
+                    
+                    <strong class="datoc" value="{{madrono.peciolos}}">PECÍOLOS:</strong>
+                        <input type="text" name="peciolos" class="datoc form-control" value="{{madrono.peciolos}}">
+                    
+                    <strong class="dato" value="{{madrono.hojas_duración_y_textura}}">HOJAS (DURACION Y TEXTURA):</strong>
+                        <input type="text" name="hojas_duración_y_textura" class="dato form-control" value="{{madrono.hojas_duración_y_textura}}">
+                    
+                    <strong class="dato" value="{{madrono.hojas_las_más_anchas}}">HOLAS (LAS MAS ANCHAS):</strong>
+                        <input type="text" name="hojas_las_más_anchas" class="dato form-control" value="{{madrono.hojas_las_más_anchas}}">
+                    
+                    <strong class="dato" value="{{madrono.hojas_margen}}">HOJAS, MARGEN:</strong>
+                        <input type="text" name="hojas_margen" class="dato form-control" value="{{madrono.hojas_margen}}">
+                    
+                    <strong>HOJAS, ENVES:</strong>
+                        <input type="text" name="hojas_enves" class="form-control" value="{{madrono.hojas_enves}}">
+                    
+                    <strong class="dato" value="{{madrono.inflorescencia}}">INFLORESCENCIA:</strong>
+                        <input type="text" name="inflorescencia" class="dato form-control" value="{{madrono.inflorescencia}}">
+                    
+                    <strong>FLORES:</strong>
+                        <input type="text" name="flores" class="form-control" value="{{madrono.flores}}">
+                </div>
+
+                <div class="form-group">
+                    <button class="btn btn-primary btn-blick" type="submit">
+                        Guardar
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://kit.fontawesome.com/444e1aeffa.js" crossorigin="anonymous"></script>
+
+<script>
+    $(document).ready(function () {
+        if ($(".dato").attr("value") === "") {
+            $('.dato').hide();
+        }
+        if ($(".datoc").attr("value") === "") {
+            $('.datoc').hide();
+        }
+        $('.zoom').hover(function () {
+            $(this).addClass('transition');
+        }, function () {
+            $(this).removeClass('transition');
+        });
+    });
+</script>

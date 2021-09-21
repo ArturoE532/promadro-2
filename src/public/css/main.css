@@ -1,0 +1,115 @@
+.logo{
+    width: 30%;
+}
+
+body{
+    font-family: Montserrat, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    color: #444;
+    background: #eee;
+    }
+  
+    .texto{
+      text-align: justify;
+      font-family: 'Delius', cursive;
+      font-size: 15px;
+      letter-spacing: 1px;
+    }
+  
+    .textotabla{
+      font-family: 'Darker Grotesque', sans-serif;
+      font-size: 16px;
+      letter-spacing: 2px;
+    }
+  
+    .subtitulos{
+      font-family: 'Spectral SC', serif;
+      font-size: 20px;
+    }
+    .subtitulos1{
+      font-family: 'Spectral SC', serif;
+      font-size: 25px;
+      color:rgba(16,87,44,1);
+      font-weight: bold;
+  
+    }
+  
+  
+  .body2{
+  background-image: url("/img/planta.jpg");
+  background-size: 100%;
+  background-attachment: scroll;
+  background-attachment: fixed;
+  }
+  
+  .body2:before {
+  content:'';
+  position: fixed ;
+        top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgb(202,200,219);
+  background: linear-gradient(90deg, rgb(103, 101, 126) 0%, rgba(178,246,162,0.4766281512605042) 100%, rgba(0,212,255,1) 100%);
+  }
+  
+  #madroñoimg{
+    width: 250px; 
+    height: 250px;
+  }
+  #madroñoimg3{
+    width: 250px; 
+    height: 350px;
+  }
+  
+    tr {
+      border-color: lighten(#34495E, 10%);
+    }
+    th, td:before {
+      color: #dd5;
+    }
+  
+  .catgr{
+    background-color: #333;
+    color: #dd5;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    text-align: center;
+  }
+  
+  .category{
+    padding-left: 1.5rem;
+    margin-top: .5rem;
+    
+  }
+  
+  .left-section{
+    padding-top: 1rem;
+  }
+  
+  .filtro{
+    padding-bottom: 1rem;
+  }
+  #apply_filter{
+    bottom: 20px;
+    z-index: 1;
+  }
+  
+  img.zoom {
+    position:relative; 
+    z-index:1;
+    width: 350px;
+    height: 200px;
+    /*-webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;*/
+  }
+  
+  .transition {
+    -webkit-transform: scale(1.8); 
+    -moz-transform: scale(1.8);
+    -o-transform: scale(1.8);
+    transform: scale(1.8);
+  }
